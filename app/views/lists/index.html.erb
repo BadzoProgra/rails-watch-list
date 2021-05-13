@@ -1,0 +1,9 @@
+<h1>All lists</h1>
+
+<ul>
+    <div class="container">
+        <% @lists.each do |list| %>
+        <li><div class="card " style="width: 18rem;"><%= link_to list.name, list_path(list)%></div></li>
+        <% end %>
+    </div>
+</ul>
