@@ -8,15 +8,15 @@
   <div class="row">
     <div class="col">
       <div class="cards">
-          <% @list.bookmarks.each do |bookmark| %>
+        <% @list.bookmarks.each do |bookmark| %>
           <div class="list-group-item">
           <div><%= bookmark.comment %></div>
           <div><%= bookmark.movie.title %></div>
           <%= link_to "Remove",
               bookmark_path(bookmark),
               method: :delete,
-              data: { confirm: "Are you sure?" } %></div>
-          <% end %>
+              data: { confirm: "Are you sure?" } %>
+        <% end %>
       </div>
     </div>
   </div>
