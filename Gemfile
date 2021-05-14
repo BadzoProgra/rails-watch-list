@@ -6,7 +6,7 @@ ruby '2.6.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.7'
 # Use postgresql as the database for Active Record
-gem 'pg', '>= 0.18', '< 2.0'
+gem "pg"
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -38,6 +38,9 @@ end
   gem 'autoprefixer-rails', '10.2.5'
   gem 'font-awesome-sass', '~> 5.12.0'
   gem 'simple_form'
+
+#hide stuff
+  gem 'dotenv-rails', groups: [:development, :test]
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
